@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		104F53866CB3989A679EF954 /* Pods_Yoox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB28841AB189765231865F4 /* Pods_Yoox.framework */; };
+		C440CA2D1E5A4C87005A9836 /* ProductListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CA2C1E5A4C87005A9836 /* ProductListCell.swift */; };
+		C440CA831E5B04A6005A9836 /* PassingDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CA821E5B04A6005A9836 /* PassingDataProtocol.swift */; };
+		C440CA851E5B04C8005A9836 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CA841E5B04C8005A9836 /* ProductListViewController.swift */; };
+		C440CA871E5B04D2005A9836 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CA861E5B04D2005A9836 /* ProductDetailViewController.swift */; };
+		C4A790BF1E56E2F700BF14E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A790BE1E56E2F700BF14E3 /* AppDelegate.swift */; };
+		C4A790C41E56E2F700BF14E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A790C21E56E2F700BF14E3 /* Main.storyboard */; };
+		C4A790C61E56E2F700BF14E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A790C51E56E2F700BF14E3 /* Assets.xcassets */; };
+		C4A790C91E56E2F700BF14E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A790C71E56E2F700BF14E3 /* LaunchScreen.storyboard */; };
+		C4A790D41E56E2F700BF14E3 /* YooxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A790D31E56E2F700BF14E3 /* YooxTests.swift */; };
+		C4A790DF1E56E2F700BF14E3 /* YooxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A790DE1E56E2F700BF14E3 /* YooxUITests.swift */; };
+		C4A790F21E56E81700BF14E3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A790F11E56E81700BF14E3 /* Product.swift */; };
+		C4A790F41E56E87000BF14E3 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A790F31E56E87000BF14E3 /* Thumbnail.swift */; };
+		C4A790F61E56EB3E00BF14E3 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A790F51E56EB3E00BF14E3 /* ProductListViewModel.swift */; };
+		C4A790F81E56ECB400BF14E3 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A790F71E56ECB400BF14E3 /* APIProvider.swift */; };
+		C4A791851E57A8E400BF14E3 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A791841E57A8E400BF14E3 /* BaseResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4A790D01E56E2F700BF14E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A790B31E56E2F700BF14E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4A790BA1E56E2F700BF14E3;
+			remoteInfo = Yoox;
+		};
+		C4A790DB1E56E2F700BF14E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A790B31E56E2F700BF14E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4A790BA1E56E2F700BF14E3;
+			remoteInfo = Yoox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1231226A568E1C0F3261DFD5 /* Pods-Yoox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yoox.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yoox/Pods-Yoox.release.xcconfig"; sourceTree = "<group>"; };
+		3BB28841AB189765231865F4 /* Pods_Yoox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yoox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF0A7104FB6D6886D9EC29C /* Pods-Yoox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yoox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yoox/Pods-Yoox.debug.xcconfig"; sourceTree = "<group>"; };
+		C440CA2C1E5A4C87005A9836 /* ProductListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListCell.swift; sourceTree = "<group>"; };
+		C440CA821E5B04A6005A9836 /* PassingDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassingDataProtocol.swift; sourceTree = "<group>"; };
+		C440CA841E5B04C8005A9836 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		C440CA861E5B04D2005A9836 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		C4A790BB1E56E2F700BF14E3 /* Yoox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yoox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A790BE1E56E2F700BF14E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4A790C31E56E2F700BF14E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4A790C51E56E2F700BF14E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4A790C81E56E2F700BF14E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4A790CA1E56E2F700BF14E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A790CF1E56E2F700BF14E3 /* YooxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YooxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A790D31E56E2F700BF14E3 /* YooxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YooxTests.swift; sourceTree = "<group>"; };
+		C4A790D51E56E2F700BF14E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A790DA1E56E2F700BF14E3 /* YooxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YooxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A790DE1E56E2F700BF14E3 /* YooxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YooxUITests.swift; sourceTree = "<group>"; };
+		C4A790E01E56E2F700BF14E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A790F11E56E81700BF14E3 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C4A790F31E56E87000BF14E3 /* Thumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		C4A790F51E56EB3E00BF14E3 /* ProductListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		C4A790F71E56ECB400BF14E3 /* APIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		C4A791841E57A8E400BF14E3 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4A790B81E56E2F700BF14E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104F53866CB3989A679EF954 /* Pods_Yoox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A790CC1E56E2F700BF14E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A790D71E56E2F700BF14E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BE78B8146DAD088B1B07EF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EF0A7104FB6D6886D9EC29C /* Pods-Yoox.debug.xcconfig */,
+				1231226A568E1C0F3261DFD5 /* Pods-Yoox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C440CA811E5B04A6005A9836 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C440CA821E5B04A6005A9836 /* PassingDataProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C4A790B21E56E2F700BF14E3 = {
+			isa = PBXGroup;
+			children = (
+				C4A790BD1E56E2F700BF14E3 /* Yoox */,
+				C4A790D21E56E2F700BF14E3 /* YooxTests */,
+				C4A790DD1E56E2F700BF14E3 /* YooxUITests */,
+				C4A790BC1E56E2F700BF14E3 /* Products */,
+				9BE78B8146DAD088B1B07EF7 /* Pods */,
+				DCD147BFF72E3DA0ADB46E63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4A790BC1E56E2F700BF14E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4A790BB1E56E2F700BF14E3 /* Yoox.app */,
+				C4A790CF1E56E2F700BF14E3 /* YooxTests.xctest */,
+				C4A790DA1E56E2F700BF14E3 /* YooxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4A790BD1E56E2F700BF14E3 /* Yoox */ = {
+			isa = PBXGroup;
+			children = (
+				C4A790EC1E56E7DD00BF14E3 /* ViewControllers */,
+				C4A790ED1E56E7DD00BF14E3 /* Models */,
+				C4A790EE1E56E7DD00BF14E3 /* ViewModels */,
+				C4A790EF1E56E7DD00BF14E3 /* Views */,
+				C440CA811E5B04A6005A9836 /* Protocols */,
+				C4A790BE1E56E2F700BF14E3 /* AppDelegate.swift */,
+				C4A790C21E56E2F700BF14E3 /* Main.storyboard */,
+				C4A790C51E56E2F700BF14E3 /* Assets.xcassets */,
+				C4A790C71E56E2F700BF14E3 /* LaunchScreen.storyboard */,
+				C4A790CA1E56E2F700BF14E3 /* Info.plist */,
+				C4A790F71E56ECB400BF14E3 /* APIProvider.swift */,
+			);
+			path = Yoox;
+			sourceTree = "<group>";
+		};
+		C4A790D21E56E2F700BF14E3 /* YooxTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4A790D31E56E2F700BF14E3 /* YooxTests.swift */,
+				C4A790D51E56E2F700BF14E3 /* Info.plist */,
+			);
+			path = YooxTests;
+			sourceTree = "<group>";
+		};
+		C4A790DD1E56E2F700BF14E3 /* YooxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4A790DE1E56E2F700BF14E3 /* YooxUITests.swift */,
+				C4A790E01E56E2F700BF14E3 /* Info.plist */,
+			);
+			path = YooxUITests;
+			sourceTree = "<group>";
+		};
+		C4A790EC1E56E7DD00BF14E3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C440CA841E5B04C8005A9836 /* ProductListViewController.swift */,
+				C440CA861E5B04D2005A9836 /* ProductDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C4A790ED1E56E7DD00BF14E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4A791831E57A8D500BF14E3 /* ResponseData */,
+				C4A790F11E56E81700BF14E3 /* Product.swift */,
+				C4A790F31E56E87000BF14E3 /* Thumbnail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4A790EE1E56E7DD00BF14E3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C4A790F51E56EB3E00BF14E3 /* ProductListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C4A790EF1E56E7DD00BF14E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4A790F01E56E7DD00BF14E3 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4A790F01E56E7DD00BF14E3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C440CA2C1E5A4C87005A9836 /* ProductListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C4A791831E57A8D500BF14E3 /* ResponseData */ = {
+			isa = PBXGroup;
+			children = (
+				C4A791841E57A8E400BF14E3 /* BaseResponse.swift */,
+			);
+			path = ResponseData;
+			sourceTree = "<group>";
+		};
+		DCD147BFF72E3DA0ADB46E63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BB28841AB189765231865F4 /* Pods_Yoox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4A790BA1E56E2F700BF14E3 /* Yoox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A790E31E56E2F700BF14E3 /* Build configuration list for PBXNativeTarget "Yoox" */;
+			buildPhases = (
+				9A3DC78C15C598B33C2892E7 /* [CP] Check Pods Manifest.lock */,
+				C4A790B71E56E2F700BF14E3 /* Sources */,
+				C4A790B81E56E2F700BF14E3 /* Frameworks */,
+				C4A790B91E56E2F700BF14E3 /* Resources */,
+				E99549DBCE4657C9FA468E08 /* [CP] Embed Pods Frameworks */,
+				369D64025F0D8EBC60B1CEA7 /* [CP] Copy Pods Resources */,
+				6E982E0540D1945852102120 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yoox;
+			productName = Yoox;
+			productReference = C4A790BB1E56E2F700BF14E3 /* Yoox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4A790CE1E56E2F700BF14E3 /* YooxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A790E61E56E2F700BF14E3 /* Build configuration list for PBXNativeTarget "YooxTests" */;
+			buildPhases = (
+				C4A790CB1E56E2F700BF14E3 /* Sources */,
+				C4A790CC1E56E2F700BF14E3 /* Frameworks */,
+				C4A790CD1E56E2F700BF14E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4A790D11E56E2F700BF14E3 /* PBXTargetDependency */,
+			);
+			name = YooxTests;
+			productName = YooxTests;
+			productReference = C4A790CF1E56E2F700BF14E3 /* YooxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4A790D91E56E2F700BF14E3 /* YooxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A790E91E56E2F700BF14E3 /* Build configuration list for PBXNativeTarget "YooxUITests" */;
+			buildPhases = (
+				C4A790D61E56E2F700BF14E3 /* Sources */,
+				C4A790D71E56E2F700BF14E3 /* Frameworks */,
+				C4A790D81E56E2F700BF14E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4A790DC1E56E2F700BF14E3 /* PBXTargetDependency */,
+			);
+			name = YooxUITests;
+			productName = YooxUITests;
+			productReference = C4A790DA1E56E2F700BF14E3 /* YooxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4A790B31E56E2F700BF14E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = it.whiteworld.test;
+				TargetAttributes = {
+					C4A790BA1E56E2F700BF14E3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 26Z828N557;
+						ProvisioningStyle = Automatic;
+					};
+					C4A790CE1E56E2F700BF14E3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 26Z828N557;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C4A790BA1E56E2F700BF14E3;
+					};
+					C4A790D91E56E2F700BF14E3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 26Z828N557;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C4A790BA1E56E2F700BF14E3;
+					};
+				};
+			};
+			buildConfigurationList = C4A790B61E56E2F700BF14E3 /* Build configuration list for PBXProject "Yoox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4A790B21E56E2F700BF14E3;
+			productRefGroup = C4A790BC1E56E2F700BF14E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4A790BA1E56E2F700BF14E3 /* Yoox */,
+				C4A790CE1E56E2F700BF14E3 /* YooxTests */,
+				C4A790D91E56E2F700BF14E3 /* YooxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4A790B91E56E2F700BF14E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A790C91E56E2F700BF14E3 /* LaunchScreen.storyboard in Resources */,
+				C4A790C61E56E2F700BF14E3 /* Assets.xcassets in Resources */,
+				C4A790C41E56E2F700BF14E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A790CD1E56E2F700BF14E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A790D81E56E2F700BF14E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		369D64025F0D8EBC60B1CEA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yoox/Pods-Yoox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E982E0540D1945852102120 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yoox/Pods-Yoox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A3DC78C15C598B33C2892E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E99549DBCE4657C9FA468E08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yoox/Pods-Yoox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4A790B71E56E2F700BF14E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A790F61E56EB3E00BF14E3 /* ProductListViewModel.swift in Sources */,
+				C440CA851E5B04C8005A9836 /* ProductListViewController.swift in Sources */,
+				C4A790BF1E56E2F700BF14E3 /* AppDelegate.swift in Sources */,
+				C440CA831E5B04A6005A9836 /* PassingDataProtocol.swift in Sources */,
+				C4A790F41E56E87000BF14E3 /* Thumbnail.swift in Sources */,
+				C4A791851E57A8E400BF14E3 /* BaseResponse.swift in Sources */,
+				C440CA2D1E5A4C87005A9836 /* ProductListCell.swift in Sources */,
+				C440CA871E5B04D2005A9836 /* ProductDetailViewController.swift in Sources */,
+				C4A790F21E56E81700BF14E3 /* Product.swift in Sources */,
+				C4A790F81E56ECB400BF14E3 /* APIProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A790CB1E56E2F700BF14E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A790D41E56E2F700BF14E3 /* YooxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A790D61E56E2F700BF14E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A790DF1E56E2F700BF14E3 /* YooxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4A790D11E56E2F700BF14E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4A790BA1E56E2F700BF14E3 /* Yoox */;
+			targetProxy = C4A790D01E56E2F700BF14E3 /* PBXContainerItemProxy */;
+		};
+		C4A790DC1E56E2F700BF14E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4A790BA1E56E2F700BF14E3 /* Yoox */;
+			targetProxy = C4A790DB1E56E2F700BF14E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4A790C21E56E2F700BF14E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4A790C31E56E2F700BF14E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4A790C71E56E2F700BF14E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4A790C81E56E2F700BF14E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4A790E11E56E2F700BF14E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4A790E21E56E2F700BF14E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4A790E41E56E2F700BF14E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF0A7104FB6D6886D9EC29C /* Pods-Yoox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 26Z828N557;
+				INFOPLIST_FILE = Yoox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.whiteworld.Yoox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		C4A790E51E56E2F700BF14E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1231226A568E1C0F3261DFD5 /* Pods-Yoox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 26Z828N557;
+				INFOPLIST_FILE = Yoox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.whiteworld.Yoox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		C4A790E71E56E2F700BF14E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 26Z828N557;
+				INFOPLIST_FILE = YooxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.whiteworld.YooxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yoox.app/Yoox";
+			};
+			name = Debug;
+		};
+		C4A790E81E56E2F700BF14E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 26Z828N557;
+				INFOPLIST_FILE = YooxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.whiteworld.YooxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yoox.app/Yoox";
+			};
+			name = Release;
+		};
+		C4A790EA1E56E2F700BF14E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 26Z828N557;
+				INFOPLIST_FILE = YooxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.whiteworld.YooxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Yoox;
+			};
+			name = Debug;
+		};
+		C4A790EB1E56E2F700BF14E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 26Z828N557;
+				INFOPLIST_FILE = YooxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.whiteworld.YooxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Yoox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4A790B61E56E2F700BF14E3 /* Build configuration list for PBXProject "Yoox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A790E11E56E2F700BF14E3 /* Debug */,
+				C4A790E21E56E2F700BF14E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A790E31E56E2F700BF14E3 /* Build configuration list for PBXNativeTarget "Yoox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A790E41E56E2F700BF14E3 /* Debug */,
+				C4A790E51E56E2F700BF14E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A790E61E56E2F700BF14E3 /* Build configuration list for PBXNativeTarget "YooxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A790E71E56E2F700BF14E3 /* Debug */,
+				C4A790E81E56E2F700BF14E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A790E91E56E2F700BF14E3 /* Build configuration list for PBXNativeTarget "YooxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A790EA1E56E2F700BF14E3 /* Debug */,
+				C4A790EB1E56E2F700BF14E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4A790B31E56E2F700BF14E3 /* Project object */;
+}
