@@ -78,6 +78,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cUq-xp-4CX"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="agm-6D-61u"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -88,9 +92,78 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4Oe-WL-X9b" secondAttribute="bottom" id="IvU-gD-n32"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="4Oe-WL-X9b" id="nSD-g0-bRe"/>
+                        <segue destination="Q34-k2-c3T" kind="show" identifier="productDetailSegueID" id="Wv6-Vh-CJf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="129" y="34"/>
+        </scene>
+        <!--Product Detail View Controller-->
+        <scene sceneID="Kam-2P-Hm9">
+            <objects>
+                <viewController id="Q34-k2-c3T" customClass="ProductDetailViewController" customModule="Yoox" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ohk-lW-2vY"/>
+                        <viewControllerLayoutGuide type="bottom" id="ISY-xd-Act"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gCy-KF-RbJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Exc-z0-dec">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jO4-dj-oKS" appends="YES" id="gbH-r2-V3p"/>
+                                </connections>
+                            </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1h4-08-8aF">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3R-rX-jcx">
+                                <rect key="frame" x="16" y="36" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Fc7-JI-0Es"/>
+                                    <constraint firstAttribute="width" constant="35" id="jka-IT-LZZ"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <segue destination="CgQ-or-r63" kind="unwind" unwindAction="unwindAfterShowingPhoto:" id="EO2-e5-pkR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1h4-08-8aF" firstAttribute="centerY" secondItem="gCy-KF-RbJ" secondAttribute="centerY" id="4FJ-zv-9cW"/>
+                            <constraint firstAttribute="trailing" secondItem="Exc-z0-dec" secondAttribute="trailing" id="5dt-Zs-KBv"/>
+                            <constraint firstItem="Exc-z0-dec" firstAttribute="leading" secondItem="gCy-KF-RbJ" secondAttribute="leading" id="8qS-BA-tvz"/>
+                            <constraint firstItem="J3R-rX-jcx" firstAttribute="leading" secondItem="gCy-KF-RbJ" secondAttribute="leading" constant="16" id="Nhe-mJ-V9E"/>
+                            <constraint firstItem="Exc-z0-dec" firstAttribute="top" secondItem="gCy-KF-RbJ" secondAttribute="top" id="PJS-vW-NYX"/>
+                            <constraint firstItem="1h4-08-8aF" firstAttribute="centerX" secondItem="gCy-KF-RbJ" secondAttribute="centerX" id="YQe-9Y-uJS"/>
+                            <constraint firstItem="ISY-xd-Act" firstAttribute="top" secondItem="Exc-z0-dec" secondAttribute="bottom" id="meB-e8-cIh"/>
+                            <constraint firstItem="J3R-rX-jcx" firstAttribute="top" secondItem="Ohk-lW-2vY" secondAttribute="bottom" constant="16" id="vCp-ov-8qH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="1h4-08-8aF" id="kiZ-Mw-kMd"/>
+                        <outlet property="scrollView" destination="Exc-z0-dec" id="FAk-pl-TdV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K3E-Zs-G0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="CgQ-or-r63" userLabel="Exit" sceneMemberID="exit"/>
+                <pinchGestureRecognizer id="jO4-dj-oKS">
+                    <connections>
+                        <action selector="handlePinch:" destination="Q34-k2-c3T" id="fGO-Lp-umB"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1044" y="33.733133433283363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="close" width="512" height="512"/>
+    </resources>
 </document>
