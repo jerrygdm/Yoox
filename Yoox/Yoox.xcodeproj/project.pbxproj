@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C440CA3B1E5AFB11005A9836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CA3A1E5AFB11005A9836 /* AppDelegate.swift */; };
+		C440CA3D1E5AFB11005A9836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CA3C1E5AFB11005A9836 /* ViewController.swift */; };
+		C440CA401E5AFB11005A9836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C440CA3E1E5AFB11005A9836 /* Main.storyboard */; };
+		C440CA421E5AFB11005A9836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C440CA411E5AFB11005A9836 /* Assets.xcassets */; };
+		C440CA451E5AFB11005A9836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C440CA431E5AFB11005A9836 /* LaunchScreen.storyboard */; };
+		C440CA501E5AFB11005A9836 /* YooxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CA4F1E5AFB11005A9836 /* YooxTests.swift */; };
+		C440CA5B1E5AFB11005A9836 /* YooxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CA5A1E5AFB11005A9836 /* YooxUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C440CA4C1E5AFB11005A9836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C440CA2F1E5AFB11005A9836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C440CA361E5AFB11005A9836;
+			remoteInfo = Yoox;
+		};
+		C440CA571E5AFB11005A9836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C440CA2F1E5AFB11005A9836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C440CA361E5AFB11005A9836;
+			remoteInfo = Yoox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C440CA371E5AFB11005A9836 /* Yoox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yoox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C440CA3A1E5AFB11005A9836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C440CA3C1E5AFB11005A9836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C440CA3F1E5AFB11005A9836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C440CA411E5AFB11005A9836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C440CA441E5AFB11005A9836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C440CA461E5AFB11005A9836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C440CA4B1E5AFB11005A9836 /* YooxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YooxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C440CA4F1E5AFB11005A9836 /* YooxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YooxTests.swift; sourceTree = "<group>"; };
+		C440CA511E5AFB11005A9836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C440CA561E5AFB11005A9836 /* YooxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YooxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C440CA5A1E5AFB11005A9836 /* YooxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YooxUITests.swift; sourceTree = "<group>"; };
+		C440CA5C1E5AFB11005A9836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C440CA341E5AFB11005A9836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C440CA481E5AFB11005A9836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C440CA531E5AFB11005A9836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C440CA2E1E5AFB11005A9836 = {
+			isa = PBXGroup;
+			children = (
+				C440CA391E5AFB11005A9836 /* Yoox */,
+				C440CA4E1E5AFB11005A9836 /* YooxTests */,
+				C440CA591E5AFB11005A9836 /* YooxUITests */,
+				C440CA381E5AFB11005A9836 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C440CA381E5AFB11005A9836 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C440CA371E5AFB11005A9836 /* Yoox.app */,
+				C440CA4B1E5AFB11005A9836 /* YooxTests.xctest */,
+				C440CA561E5AFB11005A9836 /* YooxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C440CA391E5AFB11005A9836 /* Yoox */ = {
+			isa = PBXGroup;
+			children = (
+				C440CA3A1E5AFB11005A9836 /* AppDelegate.swift */,
+				C440CA3C1E5AFB11005A9836 /* ViewController.swift */,
+				C440CA3E1E5AFB11005A9836 /* Main.storyboard */,
+				C440CA411E5AFB11005A9836 /* Assets.xcassets */,
+				C440CA431E5AFB11005A9836 /* LaunchScreen.storyboard */,
+				C440CA461E5AFB11005A9836 /* Info.plist */,
+			);
+			path = Yoox;
+			sourceTree = "<group>";
+		};
+		C440CA4E1E5AFB11005A9836 /* YooxTests */ = {
+			isa = PBXGroup;
+			children = (
+				C440CA4F1E5AFB11005A9836 /* YooxTests.swift */,
+				C440CA511E5AFB11005A9836 /* Info.plist */,
+			);
+			path = YooxTests;
+			sourceTree = "<group>";
+		};
+		C440CA591E5AFB11005A9836 /* YooxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C440CA5A1E5AFB11005A9836 /* YooxUITests.swift */,
+				C440CA5C1E5AFB11005A9836 /* Info.plist */,
+			);
+			path = YooxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C440CA361E5AFB11005A9836 /* Yoox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C440CA5F1E5AFB11005A9836 /* Build configuration list for PBXNativeTarget "Yoox" */;
+			buildPhases = (
+				C440CA331E5AFB11005A9836 /* Sources */,
+				C440CA341E5AFB11005A9836 /* Frameworks */,
+				C440CA351E5AFB11005A9836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yoox;
+			productName = Yoox;
+			productReference = C440CA371E5AFB11005A9836 /* Yoox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C440CA4A1E5AFB11005A9836 /* YooxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C440CA621E5AFB11005A9836 /* Build configuration list for PBXNativeTarget "YooxTests" */;
+			buildPhases = (
+				C440CA471E5AFB11005A9836 /* Sources */,
+				C440CA481E5AFB11005A9836 /* Frameworks */,
+				C440CA491E5AFB11005A9836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C440CA4D1E5AFB11005A9836 /* PBXTargetDependency */,
+			);
+			name = YooxTests;
+			productName = YooxTests;
+			productReference = C440CA4B1E5AFB11005A9836 /* YooxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C440CA551E5AFB11005A9836 /* YooxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C440CA651E5AFB11005A9836 /* Build configuration list for PBXNativeTarget "YooxUITests" */;
+			buildPhases = (
+				C440CA521E5AFB11005A9836 /* Sources */,
+				C440CA531E5AFB11005A9836 /* Frameworks */,
+				C440CA541E5AFB11005A9836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C440CA581E5AFB11005A9836 /* PBXTargetDependency */,
+			);
+			name = YooxUITests;
+			productName = YooxUITests;
+			productReference = C440CA561E5AFB11005A9836 /* YooxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C440CA2F1E5AFB11005A9836 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = it.whiteworld.yoox;
+				TargetAttributes = {
+					C440CA361E5AFB11005A9836 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 26Z828N557;
+						ProvisioningStyle = Automatic;
+					};
+					C440CA4A1E5AFB11005A9836 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 26Z828N557;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C440CA361E5AFB11005A9836;
+					};
+					C440CA551E5AFB11005A9836 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 26Z828N557;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C440CA361E5AFB11005A9836;
+					};
+				};
+			};
+			buildConfigurationList = C440CA321E5AFB11005A9836 /* Build configuration list for PBXProject "Yoox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C440CA2E1E5AFB11005A9836;
+			productRefGroup = C440CA381E5AFB11005A9836 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C440CA361E5AFB11005A9836 /* Yoox */,
+				C440CA4A1E5AFB11005A9836 /* YooxTests */,
+				C440CA551E5AFB11005A9836 /* YooxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C440CA351E5AFB11005A9836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C440CA451E5AFB11005A9836 /* LaunchScreen.storyboard in Resources */,
+				C440CA421E5AFB11005A9836 /* Assets.xcassets in Resources */,
+				C440CA401E5AFB11005A9836 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C440CA491E5AFB11005A9836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C440CA541E5AFB11005A9836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C440CA331E5AFB11005A9836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C440CA3D1E5AFB11005A9836 /* ViewController.swift in Sources */,
+				C440CA3B1E5AFB11005A9836 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C440CA471E5AFB11005A9836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C440CA501E5AFB11005A9836 /* YooxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C440CA521E5AFB11005A9836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C440CA5B1E5AFB11005A9836 /* YooxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C440CA4D1E5AFB11005A9836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C440CA361E5AFB11005A9836 /* Yoox */;
+			targetProxy = C440CA4C1E5AFB11005A9836 /* PBXContainerItemProxy */;
+		};
+		C440CA581E5AFB11005A9836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C440CA361E5AFB11005A9836 /* Yoox */;
+			targetProxy = C440CA571E5AFB11005A9836 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C440CA3E1E5AFB11005A9836 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C440CA3F1E5AFB11005A9836 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C440CA431E5AFB11005A9836 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C440CA441E5AFB11005A9836 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C440CA5D1E5AFB11005A9836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C440CA5E1E5AFB11005A9836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C440CA601E5AFB11005A9836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 26Z828N557;
+				INFOPLIST_FILE = Yoox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.whiteworld.Yoox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C440CA611E5AFB11005A9836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 26Z828N557;
+				INFOPLIST_FILE = Yoox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.whiteworld.Yoox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C440CA631E5AFB11005A9836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 26Z828N557;
+				INFOPLIST_FILE = YooxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.whiteworld.YooxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yoox.app/Yoox";
+			};
+			name = Debug;
+		};
+		C440CA641E5AFB11005A9836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 26Z828N557;
+				INFOPLIST_FILE = YooxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.whiteworld.YooxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yoox.app/Yoox";
+			};
+			name = Release;
+		};
+		C440CA661E5AFB11005A9836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 26Z828N557;
+				INFOPLIST_FILE = YooxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.whiteworld.YooxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Yoox;
+			};
+			name = Debug;
+		};
+		C440CA671E5AFB11005A9836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 26Z828N557;
+				INFOPLIST_FILE = YooxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.whiteworld.YooxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Yoox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C440CA321E5AFB11005A9836 /* Build configuration list for PBXProject "Yoox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C440CA5D1E5AFB11005A9836 /* Debug */,
+				C440CA5E1E5AFB11005A9836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C440CA5F1E5AFB11005A9836 /* Build configuration list for PBXNativeTarget "Yoox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C440CA601E5AFB11005A9836 /* Debug */,
+				C440CA611E5AFB11005A9836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C440CA621E5AFB11005A9836 /* Build configuration list for PBXNativeTarget "YooxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C440CA631E5AFB11005A9836 /* Debug */,
+				C440CA641E5AFB11005A9836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C440CA651E5AFB11005A9836 /* Build configuration list for PBXNativeTarget "YooxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C440CA661E5AFB11005A9836 /* Debug */,
+				C440CA671E5AFB11005A9836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C440CA2F1E5AFB11005A9836 /* Project object */;
+}
