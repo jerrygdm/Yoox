@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		104F53866CB3989A679EF954 /* Pods_Yoox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB28841AB189765231865F4 /* Pods_Yoox.framework */; };
 		C440CA2D1E5A4C87005A9836 /* ProductListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CA2C1E5A4C87005A9836 /* ProductListCell.swift */; };
+		C440CA831E5B04A6005A9836 /* PassingDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CA821E5B04A6005A9836 /* PassingDataProtocol.swift */; };
+		C440CA851E5B04C8005A9836 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CA841E5B04C8005A9836 /* ProductListViewController.swift */; };
+		C440CA871E5B04D2005A9836 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440CA861E5B04D2005A9836 /* ProductDetailViewController.swift */; };
 		C4A790BF1E56E2F700BF14E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A790BE1E56E2F700BF14E3 /* AppDelegate.swift */; };
-		C4A790C11E56E2F700BF14E3 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A790C01E56E2F700BF14E3 /* ProductListViewController.swift */; };
 		C4A790C41E56E2F700BF14E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A790C21E56E2F700BF14E3 /* Main.storyboard */; };
 		C4A790C61E56E2F700BF14E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A790C51E56E2F700BF14E3 /* Assets.xcassets */; };
 		C4A790C91E56E2F700BF14E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A790C71E56E2F700BF14E3 /* LaunchScreen.storyboard */; };
@@ -45,9 +47,11 @@
 		3BB28841AB189765231865F4 /* Pods_Yoox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yoox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF0A7104FB6D6886D9EC29C /* Pods-Yoox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yoox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yoox/Pods-Yoox.debug.xcconfig"; sourceTree = "<group>"; };
 		C440CA2C1E5A4C87005A9836 /* ProductListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListCell.swift; sourceTree = "<group>"; };
+		C440CA821E5B04A6005A9836 /* PassingDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassingDataProtocol.swift; sourceTree = "<group>"; };
+		C440CA841E5B04C8005A9836 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		C440CA861E5B04D2005A9836 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		C4A790BB1E56E2F700BF14E3 /* Yoox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yoox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A790BE1E56E2F700BF14E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4A790C01E56E2F700BF14E3 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		C4A790C31E56E2F700BF14E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4A790C51E56E2F700BF14E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4A790C81E56E2F700BF14E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,6 +104,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C440CA811E5B04A6005A9836 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C440CA821E5B04A6005A9836 /* PassingDataProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		C4A790B21E56E2F700BF14E3 = {
 			isa = PBXGroup;
 			children = (
@@ -129,8 +141,8 @@
 				C4A790ED1E56E7DD00BF14E3 /* Models */,
 				C4A790EE1E56E7DD00BF14E3 /* ViewModels */,
 				C4A790EF1E56E7DD00BF14E3 /* Views */,
+				C440CA811E5B04A6005A9836 /* Protocols */,
 				C4A790BE1E56E2F700BF14E3 /* AppDelegate.swift */,
-				C4A790C01E56E2F700BF14E3 /* ProductListViewController.swift */,
 				C4A790C21E56E2F700BF14E3 /* Main.storyboard */,
 				C4A790C51E56E2F700BF14E3 /* Assets.xcassets */,
 				C4A790C71E56E2F700BF14E3 /* LaunchScreen.storyboard */,
@@ -161,6 +173,8 @@
 		C4A790EC1E56E7DD00BF14E3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C440CA841E5B04C8005A9836 /* ProductListViewController.swift */,
+				C440CA861E5B04D2005A9836 /* ProductDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -419,12 +433,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4A790C11E56E2F700BF14E3 /* ProductListViewController.swift in Sources */,
 				C4A790F61E56EB3E00BF14E3 /* ProductListViewModel.swift in Sources */,
+				C440CA851E5B04C8005A9836 /* ProductListViewController.swift in Sources */,
 				C4A790BF1E56E2F700BF14E3 /* AppDelegate.swift in Sources */,
+				C440CA831E5B04A6005A9836 /* PassingDataProtocol.swift in Sources */,
 				C4A790F41E56E87000BF14E3 /* Thumbnail.swift in Sources */,
 				C4A791851E57A8E400BF14E3 /* BaseResponse.swift in Sources */,
 				C440CA2D1E5A4C87005A9836 /* ProductListCell.swift in Sources */,
+				C440CA871E5B04D2005A9836 /* ProductDetailViewController.swift in Sources */,
 				C4A790F21E56E81700BF14E3 /* Product.swift in Sources */,
 				C4A790F81E56ECB400BF14E3 /* APIProvider.swift in Sources */,
 			);

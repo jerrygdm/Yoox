@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Yoox
 //
-//  Created by Gianmaria Dal Maistro on 17/02/17.
-//  Copyright © 2017 it.whiteworld.test. All rights reserved.
+//  Created by Gianmaria Dal Maistro on 20/02/17.
+//  Copyright © 2017 it.whiteworld.yoox. All rights reserved.
 //
 
 import UIKit
@@ -15,8 +15,9 @@ class ProductListViewController: UIViewController
 {
     var productListViewModel = ProductListViewModel()
     let disposeBag = DisposeBag()
-
+    
     var items = [Product]()
+    var selectedModel : Product?
     var numCellsPerRow = 3
     
     @IBOutlet weak var collectionView : UICollectionView?
@@ -24,33 +25,48 @@ class ProductListViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        self.collectionView?.rx_nextPageTrigger.map{ offset  in
+        
+        self.collectionView?.rx_nextPageTrigger.map{ offset in
             return offset
-        }.scan(0){ lastCount, newValue in
-            return lastCount + 1
-        }.flatMapLatest{ page in
-            return self.productListViewModel.getProducts(String(page))
-        }.subscribeNext{ response in
-            if let products = response?.items
-            {
-                let range = NSMakeRange(self.items.count, products.count)
-                let newIndexes : NSIndexSet = NSIndexSet(indexesInRange: range)
-                
-                var newIndexPath = [NSIndexPath]()
-                
-                newIndexes.enumerateIndexesUsingBlock({ (idx, stop) in
-                    newIndexPath.append((NSIndexPath(forRow: idx, inSection: 0)))
-                })
-                
-                self.items.appendContentsOf(products)
-                
-                self.collectionView?.performBatchUpdates({ 
-                    self.collectionView?.insertItemsAtIndexPaths(newIndexPath)
-                    }, completion: { (completion) in
-                })
-            }
-        }.addDisposableTo(disposeBag)
+            }.scan(0){ lastCount, newValue in
+                return lastCount + 1
+            }.flatMapLatest{ page in
+                return self.productListViewModel.getProducts(String(page))
+            }.subscribeNext{ response in
+                if let products = response?.items
+                {
+                    let range = NSMakeRange(self.items.count, products.count)
+                    let newIndexes : NSIndexSet = NSIndexSet(indexesInRange: range)
+                    
+                    var newIndexPath = [NSIndexPath]()
+                    
+                    newIndexes.enumerateIndexesUsingBlock({ (idx, stop) in
+                        newIndexPath.append((NSIndexPath(forRow: idx, inSection: 0)))
+                    })
+                    
+                    self.items.appendContentsOf(products)
+                    
+                    self.collectionView?.performBatchUpdates({
+                        self.collectionView?.insertItemsAtIndexPaths(newIndexPath)
+                        }, completion: { (completion) in
+                    })
+                }
+            }.addDisposableTo(disposeBag)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        guard let selected = self.selectedModel else { return }
+        
+        if let destination = segue.destinationViewController as? PassingDataProtocol
+        {
+            destination.data = selected
+        }
+    }
+    
+    @IBAction func unwindAfterShowingPhoto(storyboardSegue : UIStoryboardSegue)
+    {
+    
     }
 }
 
@@ -73,7 +89,7 @@ extension ProductListViewController : UICollectionViewDataSource
             cell.priceLabel?.text = model.priceString
             cell.imageView?.sd_setImageWithURL(NSURL(string: model.imageUrlString))
         }
-
+        
         return cell
     }
 }
@@ -83,11 +99,17 @@ extension ProductListViewController : UICollectionViewDelegate
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
     {
         guard let flowLayout : UICollectionViewFlowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return CGSizeMake(100, 100)}
-
+        
         let availableWidthForCells = CGFloat(CGRectGetWidth(collectionView.frame) - flowLayout.sectionInset.left - flowLayout.sectionInset.right) - CGFloat(flowLayout.minimumInteritemSpacing) * CGFloat(numCellsPerRow - 1);
         let cellWidth = availableWidthForCells / CGFloat(numCellsPerRow)
         
         return CGSizeMake(cellWidth, flowLayout.itemSize.height);
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
+    {
+        self.selectedModel = self.items[indexPath.row]
+        self.performSegueWithIdentifier("productDetailSegueID", sender: self)
     }
 }
 
