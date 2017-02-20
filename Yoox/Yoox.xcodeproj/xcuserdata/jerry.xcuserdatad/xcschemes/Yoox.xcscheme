@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C440CA361E5AFB11005A9836"
+               BlueprintIdentifier = "C4A790BA1E56E2F700BF14E3"
                BuildableName = "Yoox.app"
                BlueprintName = "Yoox"
                ReferencedContainer = "container:Yoox.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C440CA4A1E5AFB11005A9836"
+               BlueprintIdentifier = "C4A790CE1E56E2F700BF14E3"
                BuildableName = "YooxTests.xctest"
                BlueprintName = "YooxTests"
                ReferencedContainer = "container:Yoox.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C440CA551E5AFB11005A9836"
+               BlueprintIdentifier = "C4A790D91E56E2F700BF14E3"
                BuildableName = "YooxUITests.xctest"
                BlueprintName = "YooxUITests"
                ReferencedContainer = "container:Yoox.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C440CA361E5AFB11005A9836"
+            BlueprintIdentifier = "C4A790BA1E56E2F700BF14E3"
             BuildableName = "Yoox.app"
             BlueprintName = "Yoox"
             ReferencedContainer = "container:Yoox.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C440CA361E5AFB11005A9836"
+            BlueprintIdentifier = "C4A790BA1E56E2F700BF14E3"
             BuildableName = "Yoox.app"
             BlueprintName = "Yoox"
             ReferencedContainer = "container:Yoox.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C440CA361E5AFB11005A9836"
+            BlueprintIdentifier = "C4A790BA1E56E2F700BF14E3"
             BuildableName = "Yoox.app"
             BlueprintName = "Yoox"
             ReferencedContainer = "container:Yoox.xcodeproj">
